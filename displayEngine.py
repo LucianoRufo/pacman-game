@@ -10,7 +10,7 @@ from cStringIO import StringIO
 def displayFromWebAPI(message, picture_url):
     print 'Displaying Coupon!'
     root = Toplevel() #Tk() opens an interpreter, so Toplevel is what I want
-
+    #Test coment
     img_file = urllib.urlopen(picture_url)
     im = StringIO(img_file.read())
     image1 = Image.open(im)
